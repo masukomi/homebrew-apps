@@ -1,13 +1,17 @@
 class Oho < Formula
   desc "Takes your colorful terminal output and converts it to HTML for sharing"
   homepage "https://github.com/masukomi/oho"
-  url "https://github.com/masukomi/oho/releases/download/v1.3.2/oho_v1.3.2.tgz"
-  sha256 "059dfdf38e3fb823a4deb850777bc37be43e95e4babeb2f240e469f0fc047167"
+  current_version="v1.3.2"
+  url "https://github.com/masukomi/oho/releases/download/#{current_version}/oho_#{current_version}-source.tgz"
+  # url "file:///Users/masukomi/workspace/oho/oho_#{current_version}.tgz"
+  sha256 "8ccd7d425d198adef47b2171c18d8ebd463e831ad23c7be654583118cac08751"
 
   depends_on "bdw-gc"
   depends_on "libevent"
+  depends_on "crystal"
 
   def install
+    system "crystal", "build", "--release", "src/oho.cr"
     bin.install "oho"
   end
 
