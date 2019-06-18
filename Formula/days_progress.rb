@@ -9,6 +9,9 @@ class DaysProgress < Formula
   depends_on "chicken"
 
   def install
+    system "chicken-install", "filepath"
+    system "chicken-install", "simple-loops"
+    system "chicken-install", "ansi-escape-sequences"
     bin.install "days_progress"
   end
 
