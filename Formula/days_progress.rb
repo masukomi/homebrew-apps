@@ -6,7 +6,7 @@ class DaysProgress < Formula
   # url "file:///Users/masukomi/workspace/days_progress/days_progress_#{current_version}.tgz"
   sha256 "f96046a80db7d000c5a2e5fa293694bb5afcc011f76d81700db2d686e6d6c350"
 
-  depends_on "chicken"
+  #depends_on "chicken"
 
   def install
     bin.install "days_progress"
