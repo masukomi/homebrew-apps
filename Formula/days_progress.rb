@@ -1,4 +1,4 @@
-class days_progress < Formula
+class DaysProgress < Formula
   desc "A simple command line chart of your progress through the day"
   homepage "https://github.com/masukomi/days_progress"
   current_version="v1.0.0"
