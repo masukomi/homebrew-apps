@@ -9,9 +9,13 @@ class DaysProgress < Formula
   depends_on "chicken"
 
   def install
-    system "chicken-install", "filepath"
-    system "chicken-install", "simple-loops"
-    system "chicken-install", "ansi-escape-sequences"
+# commented out because Homebrew says
+# install: /usr/local/Cellar/chicken/5.0.0/lib/chicken/9/filepath.o: Operation not permitted
+# which may be macOS and may be homebrew. Not sure... 
+# going to instruct people to run this manually in the README
+#    system "chicken-install", "filepath"
+#    system "chicken-install", "simple-loops"
+#    system "chicken-install", "ansi-escape-sequences"
     bin.install "days_progress"
   end
 
