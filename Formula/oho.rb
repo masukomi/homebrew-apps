@@ -1,10 +1,10 @@
 class Oho < Formula
   desc "Takes your colorful terminal output and converts it to HTML for sharing"
   homepage "https://github.com/masukomi/oho"
-  current_version="v1.3.2"
+  current_version="v1.3.3"
   url "https://github.com/masukomi/oho/releases/download/#{current_version}/oho_#{current_version}-source.tgz"
   # url "file:///Users/masukomi/workspace/oho/oho_#{current_version}.tgz"
-  sha256 "8ccd7d425d198adef47b2171c18d8ebd463e831ad23c7be654583118cac08751"
+  sha256 "a3fe9159722d6ea4dd18f57581ffb238f3c57271f1149e83bf4652059f048295"
 
   depends_on "bdw-gc"
   depends_on "libevent"
