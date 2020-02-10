@@ -1,10 +1,10 @@
 class PrivateComments < Formula
-  current_version="v1.2.2"
+  current_version="v1.2.3"
   desc "A REST server to manage private comments on your code."
   homepage "https://github.com/masukomi/private_comments"
   url "https://github.com/masukomi/private_comments/releases/download/#{current_version}/private_comments_#{current_version}.tgz"
   # url "file:///Users/masukomi/workspace/private_comments/private_comments_#{current_version}.tgz"
-  sha256 "98e1132c91728551c2600440f180160796d9d209241f4c91fd7d648344222c9a"
+  sha256 "dc00630e8547dd7a0f63251f938ea0f4a8ecc607f43a2e1286fb470e2285fe47"
 
   def install
     bin.install "private_comments"
