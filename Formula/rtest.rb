@@ -1,4 +1,4 @@
-class DaysProgress < Formula
+class Rtest < Formula
   desc "An RSpec wrapper that reduces noise eases rerunning tests"
   homepage "https://github.com/masukomi/rtest"
   current_version="v1.0.0"
