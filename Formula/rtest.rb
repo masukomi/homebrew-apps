@@ -1,13 +1,14 @@
+# frozen_string_literal: true
+
 class Rtest < Formula
-  desc "An RSpec wrapper that reduces noise eases rerunning tests"
-  homepage "https://github.com/masukomi/rtest"
-  current_version="v1.0.1"
+  desc 'An RSpec wrapper that reduces noise eases rerunning tests'
+  homepage 'https://github.com/masukomi/rtest'
+  current_version = 'v1.2.0'
   url "https://github.com/masukomi/rtest/releases/download/#{current_version}/rtest_#{current_version}.tgz"
   # url "file:///Users/masukomi/workspace/rtest/rtest_#{current_version}.tgz"
-  sha256 "294c980a3e0183e5afee66bcfc517c4da57aef7d14e101f6cbf0a1aefde2d4ff"
+  sha256 '67047f3034e6cf9cc0db540343f684e7e0b04d42a4dad13f6941117c248b69a4'
 
   def install
-    bin.install "rtest"
+    bin.install 'rtest'
   end
-
 end
