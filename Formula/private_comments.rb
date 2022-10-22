@@ -1,8 +1,8 @@
 class PrivateComments < Formula
-  current_version="v1.3.0"
+  current_version="v1.3.1"
   architecture=`arch`.strip
   puts "installing for #{architecture} architecture"
-  arm_hash="2b136d21195ff6f4be808e31873352263fe183a47093b4292e22ff8553672e0f"
+  arm_hash="564ced6432052015eb4c5347d478a242e87af4cc660f12f5b1a46a75267ca67c"
   intel_hash="1bc4e5d7fa05811b54a71e085163e079ff3054a83ef6d7031f0b3ef63f3b47d1"
   desc "A REST server to manage private comments on your code."
   homepage "https://github.com/masukomi/private_comments"
